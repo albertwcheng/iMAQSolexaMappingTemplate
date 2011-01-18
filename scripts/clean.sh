@@ -7,11 +7,10 @@ read cleanSequencesAsWell
 
 if [ ${#cleanSequencesAsWell} -gt 0 ] && [ $cleanSequencesAsWell == "y" ]; then
 	echo "also clean sequences"
-	removeAndMkDirIfExist ../selexaOutput
+	removeAndMkDirIfExist ../solexaOutput
 	#mkdir ../selexaOutput
 fi
 
-removeIfExist ../bfqs
 removeIfExist ../maps
-removeIfExist ../selexaSplits
+removeIfExist ../solexaSplits
 removeIfExist ../unmaps
